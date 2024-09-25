@@ -17,8 +17,8 @@ const Navbar = () => {
         {/* 1st logo part  */}
         <div className="logo">
           <h2>
-            <span>T</span>hapa
-            <span>T</span>echnical
+            <span>C</span>hristiano
+            <span>H</span>istory
           </h2>
         </div>
 
@@ -35,7 +35,7 @@ const Navbar = () => {
               <NavLink to="/about">about</NavLink>
             </li>
             <li>
-              <NavLink to="/service">services</NavLink>
+              <NavLink to="/football">Foot ball </NavLink>
             </li>
             <li>
               <NavLink to="/contact">contact</NavLink>
@@ -48,22 +48,22 @@ const Navbar = () => {
           <ul className="social-media-desktop">
             <li>
               <a
-                href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                target="_thapa">
+                href="https://www.facebook.com/Cristiano"
+                target="_blank">
                 <FaFacebookSquare className="facebook" />
               </a>
             </li>
             <li>
               <a
-                href="https://www.instagram.com/thapatechnical/"
-                target="_thapa">
+                href="https://www.instagram.com/cristiano/"
+                target="_blank">
                 <FaInstagramSquare className="instagram" />
               </a>
             </li>
             <li>
               <a
-                href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                target="_thapa">
+                href="https://youtube.com/@cristiano?si=cCkholImlSWaaTs_"
+                target="_blank">
                 <FaYoutubeSquare className="youtube" />
               </a>
             </li>
@@ -78,10 +78,10 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* hero section  */}
-      {/* <section className="hero-section">
+      {/* hero section  
+      <section className="hero-section">
         <p>Welcome to </p>
-        <h1>Thapa Technical</h1>
+        <h1>Christiano History</h1>
       </section> */}
     </>
   );

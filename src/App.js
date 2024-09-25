@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import { Switch, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
       <Navbar />
       <section className="hero-section">
-        <p>Subscribe to </p>
-        <h1>Thapa Technical Home Page</h1>
+        <p>Welcome to </p>
+        <h1>Christiano Home Page</h1>
       </section>
     </>
   );
@@ -20,19 +20,19 @@ const About = () => {
       <Navbar />
       <section className="hero-section">
         <p>Welcome to </p>
-        <h1>Thapa Technical About Page</h1>
+        <h1>Christiano about page</h1>
       </section>
     </>
   );
 };
 
-const Service = () => {
+const Football = () => {
   return (
     <>
       <Navbar />
       <section className="hero-section">
         <p>Welcome to </p>
-        <h1>Thapa Technical Service Page</h1>
+        <h1>Christiano Foot ball page</h1>
       </section>
     </>
   );
@@ -44,7 +44,7 @@ const Contact = () => {
       <Navbar />
       <section className="hero-section">
         <p>Welcome to </p>
-        <h1>Thapa Technical Contact Page</h1>
+        <h1>Christiano contact details</h1>
       </section>
     </>
   );
@@ -52,23 +52,12 @@ const Contact = () => {
 
 const App = () => {
   return (
-    <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
-
-      <Route path="/about">
-        <About />
-      </Route>
-
-      <Route path="/service">
-        <Service />
-      </Route>
-
-      <Route path="/contact">
-        <Contact />
-      </Route>
-    </Switch>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/football" element={<Football />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
   );
 };
 
